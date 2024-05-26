@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "customnames",
+  "version": "${version}",
+  "name": "CustomNames",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/void/CustomNames"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/customnames/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.thevoidblock.customnames.client.CustomNamesClient"
+    ],
+    "main": [
+      "com.thevoidblock.customnames.CustomNames"
+    ],
+    "modmenu": [
+      "com.thevoidblock.customnames.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "customnames.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "text.autoconfig.customnames.option.enabled": "Enable Mod",
+
+  "text.autoconfig.customnames.option.globalConfig.nameOverwriteEnabled": "Global Name Overwrite Enabled",
+  "text.autoconfig.customnames.option.globalConfig.nameOverwrite": "Global Name Overwrite",
+  "text.autoconfig.customnames.option.globalConfig.nameColorEnabled": "Global Name Color Enabled",
+  "text.autoconfig.customnames.option.globalConfig.nameColor": "Global Name Color",
+  "text.autoconfig.customnames.option.globalConfig.prefixEnabled": "Global Name Prefix Enabled",
+  "text.autoconfig.customnames.option.globalConfig.prefix": "Global Name Prefix",
+  "text.autoconfig.customnames.option.globalConfig.prefixColorEnabled": "Global Name Prefix Color Enabled",
+  "text.autoconfig.customnames.option.globalConfig.prefixColor": "Global Name Prefix Color",
+  "text.autoconfig.customnames.option.globalConfig.suffixEnabled": "Global Name Suffix Enabled",
+  "text.autoconfig.customnames.option.globalConfig.suffix": "Global Name Suffix",
+  "text.autoconfig.customnames.option.globalConfig.suffixColorEnabled": "Global Name Suffix Color Enabled",
+  "text.autoconfig.customnames.option.globalConfig.suffixColor": "Global Name Suffix Color",
+  
+  
+  "text.autoconfig.customnames.option.playerEntries": "Player Rules",
+  "text.autoconfig.customnames.option.PlayerEntry": "Player Rule",
+
+  "text.autoconfig.customnames.option.PlayerEntry.enabled": "Enable Player Rule",
+  "text.autoconfig.customnames.option.PlayerEntry.playerName": "Player Name",
+  "text.autoconfig.customnames.option.PlayerEntry.playerUUID": "Player UUID",
+  "text.autoconfig.customnames.option.PlayerEntry.nameOverwriteEnabled": "Name Overwrite Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.nameOverwrite": "Name Overwrite",
+  "text.autoconfig.customnames.option.PlayerEntry.nameColorEnabled": "Name Color Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.nameColor": "Name Color",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixEnabled": "Name Prefix Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.prefix": "Name Prefix",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixColorEnabled": "Name Prefix Color Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixColor": "Name Prefix Color",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixEnabled": "Name Suffix Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.suffix": "Name Suffix",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixColorEnabled": "Name Suffix Color Enabled",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixColor": "Name Suffix Color"
+}
