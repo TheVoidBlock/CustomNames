@@ -21,8 +21,7 @@
   "text.autoconfig.customnames.option.PlayerEntry": "Player Rule",
 
   "text.autoconfig.customnames.option.PlayerEntry.enabled": "Enable Player Rule",
-  "text.autoconfig.customnames.option.PlayerEntry.playerName": "Player Name",
-  "text.autoconfig.customnames.option.PlayerEntry.playerUUID": "Player UUID",
+  "text.autoconfig.customnames.option.PlayerEntry.playerName": "Target Players Name",
   "text.autoconfig.customnames.option.PlayerEntry.nameOverwriteEnabled": "Name Overwrite Enabled",
   "text.autoconfig.customnames.option.PlayerEntry.nameOverwrite": "Name Overwrite",
   "text.autoconfig.customnames.option.PlayerEntry.nameColorEnabled": "Name Color Enabled",
