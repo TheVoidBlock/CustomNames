@@ -1,4 +1,6 @@
 {
+  "text.autoconfig.customnames.title": "Custom Names Config",
+
   "text.autoconfig.customnames.option.enabled": "Enable Mod",
 
   "text.autoconfig.customnames.option.globalConfig.nameOverwriteEnabled": "Global Name Overwrite Enabled",
