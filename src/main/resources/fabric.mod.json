@@ -4,7 +4,9 @@
   "version": "${version}",
   "name": "CustomNames",
   "description": "",
-  "authors": [],
+  "authors": [
+    "TheVoidBlock"
+  ],
   "contact": {
     "repo": "https://github.com/void/CustomNames"
   },
