@@ -3,7 +3,7 @@
   "id": "customnames",
   "version": "${version}",
   "name": "CustomNames",
-  "description": "",
+  "description": "Allows you to change what other players names look like.",
   "authors": [
     "TheVoidBlock"
   ],
