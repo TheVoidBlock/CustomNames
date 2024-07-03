@@ -17,9 +17,6 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.thevoidblock.customnames.client.CustomNamesClient"
-    ],
-    "main": [
       "com.thevoidblock.customnames.CustomNames"
     ],
     "modmenu": [
