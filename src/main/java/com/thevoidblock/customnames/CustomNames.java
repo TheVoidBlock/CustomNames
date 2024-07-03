@@ -18,6 +18,7 @@ public class CustomNames implements ModInitializer {
 
         AutoConfig.register(CustomNamesConfig.class, JanksonConfigSerializer::new);
 
+        LOGGER.info("{} initialized!", MOD_ID);
     }
 
     private static Text getAppliedPlayerName(CustomNamesConfig.PlayerEntry config, MutableText name) {
