@@ -10,7 +10,7 @@ import java.util.List;
 import static com.thevoidblock.customnames.CustomNames.MOD_ID;
 
 @Config(name = MOD_ID)
-public class ModConfig implements ConfigData {
+public class CustomNamesConfig implements ConfigData {
 
     public boolean enabled = true;
 

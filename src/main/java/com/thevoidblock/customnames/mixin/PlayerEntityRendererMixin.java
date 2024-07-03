@@ -1,7 +1,7 @@
 package com.thevoidblock.customnames.mixin;
 
 import com.thevoidblock.customnames.CustomNames;
-import com.thevoidblock.customnames.ModConfig;
+import com.thevoidblock.customnames.CustomNamesConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
 import net.minecraft.text.MutableText;
@@ -20,7 +20,7 @@ public class PlayerEntityRendererMixin {
     )
     protected void renderLabelIfPresent(Args args) {
 
-        ModConfig config = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
+        CustomNamesConfig config = AutoConfig.getConfigHolder(CustomNamesConfig.class).getConfig();
 
         if(config.enabled) {
             Text name = args.get(1);

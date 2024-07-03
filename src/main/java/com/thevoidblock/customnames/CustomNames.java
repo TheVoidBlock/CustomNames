@@ -17,11 +17,11 @@ public class CustomNames implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);
+        AutoConfig.register(CustomNamesConfig.class, JanksonConfigSerializer::new);
 
     }
 
-    private static Text getAppliedPlayerName(ModConfig.PlayerEntry config, MutableText name) {
+    private static Text getAppliedPlayerName(CustomNamesConfig.PlayerEntry config, MutableText name) {
 
         if(config.nameOverwriteEnabled) name = Text.literal(config.nameOverwrite).setStyle(name.getStyle());
         if(config.nameColorEnabled) name = name.withColor(config.nameColor);
@@ -39,7 +39,7 @@ public class CustomNames implements ModInitializer {
         return name;
     }
 
-    private static Text getAppliedGlobalName(ModConfig.Entry config, MutableText name) {
+    private static Text getAppliedGlobalName(CustomNamesConfig.Entry config, MutableText name) {
 
         if(config.nameOverwriteEnabled) name = Text.literal(config.nameOverwrite).setStyle(name.getStyle());
         if(config.nameColorEnabled) name = name.withColor(config.nameColor);
@@ -57,7 +57,7 @@ public class CustomNames implements ModInitializer {
         return name;
     }
 
-    public static Text getAppliedName(ModConfig config, MutableText name) {
+    public static Text getAppliedName(CustomNamesConfig config, MutableText name) {
 
         var nameWrapper = new Object(){Text wrappedName = name;};
 
