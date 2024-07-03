@@ -1,6 +1,5 @@
 package com.thevoidblock.customnames;
 
-import com.terraformersmc.modmenu.util.mod.Mod;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
