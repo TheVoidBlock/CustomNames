@@ -3,8 +3,8 @@ package com.thevoidblock.customnames;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.text.MutableText;
-import net.minecraft.text.Text;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,11 +12,13 @@ public class CustomNames implements ClientModInitializer {
 
     public static final String MOD_ID = "customnames";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final MinecraftClient CLIENT = MinecraftClient.getInstance();
 
     @Override
     public void onInitializeClient() {
 
         AutoConfig.register(CustomNamesConfig.class, JanksonConfigSerializer::new);
+        ChatModifier.register();
 
         LOGGER.info("{} initialized!", MOD_ID);
     }
@@ -57,7 +59,7 @@ public class CustomNames implements ClientModInitializer {
         return modificationWrapper.modification;
     }
 
-    public static Text getAppliedName(CustomNamesConfig config, MutableText name) {
+    public static Text getAppliedName(CustomNamesConfig config, Text name) {
 
         var nameWrapper = new Object(){Text wrappedName = name;};
 

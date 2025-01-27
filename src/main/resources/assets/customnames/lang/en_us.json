@@ -2,6 +2,7 @@
   "text.autoconfig.customnames.title": "Custom Names Config",
 
   "text.autoconfig.customnames.option.enabled": "Enable Mod",
+  "text.autoconfig.customnames.option.chatModification": "Modify Players Names in Chat (Experimental)",
 
   "text.autoconfig.customnames.option.globalConfig.nameOverwriteEnabled": "Global Name Overwrite Enabled",
   "text.autoconfig.customnames.option.globalConfig.nameOverwrite": "Global Name Overwrite",
@@ -33,5 +34,7 @@
   "text.autoconfig.customnames.option.PlayerEntry.suffixEnabled": "Name Suffix Enabled",
   "text.autoconfig.customnames.option.PlayerEntry.suffix": "Name Suffix",
   "text.autoconfig.customnames.option.PlayerEntry.suffixColorEnabled": "Name Suffix Color Enabled",
-  "text.autoconfig.customnames.option.PlayerEntry.suffixColor": "Name Suffix Color"
+  "text.autoconfig.customnames.option.PlayerEntry.suffixColor": "Name Suffix Color",
+
+  "chat.customnames.format": "<%s> %s"
 }

@@ -13,6 +13,7 @@ import static com.thevoidblock.customnames.CustomNames.MOD_ID;
 public class CustomNamesConfig implements ConfigData {
 
     public boolean enabled = true;
+    public boolean chatModification = true;
 
     @ConfigEntry.Gui.TransitiveObject
     public Entry globalConfig = new Entry();
