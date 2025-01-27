@@ -78,9 +78,9 @@ public class ChatModifier {
                     if (checkNameModification(config, name)) {
                         assert CLIENT.player != null;
                         addModifiedMessage(getAppliedName(config, name), messageText);
-                        return false;
+                        return true;
                     }
-                    return true;
+                    return false;
                 },
                 message
         );
