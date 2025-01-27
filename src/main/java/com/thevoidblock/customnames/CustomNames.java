@@ -21,36 +21,22 @@ public class CustomNames implements ClientModInitializer {
         LOGGER.info("{} initialized!", MOD_ID);
     }
 
-    private static Text getAppliedPlayerName(CustomNamesConfig.PlayerEntry config, MutableText name) {
-
-        if(config.nameOverwriteEnabled) name = Text.literal(config.nameOverwrite).setStyle(name.getStyle());
-        if(config.nameColorEnabled) name = name.withColor(config.nameColor);
-        if(config.prefixEnabled) {
-            MutableText prefix = Text.literal(config.prefix);
-            if(config.prefixColorEnabled) prefix = prefix.withColor(config.prefixColor);
-            name = prefix.append(name);
-        }
-        if(config.suffixEnabled) {
-            MutableText suffix = Text.literal(config.suffix);
-            if(config.suffixColorEnabled) suffix = suffix.withColor(config.suffixColor);
-            name = name.append(suffix);
-        }
-
-        return name;
+    private static Text getAppliedPlayerName(CustomNamesConfig.PlayerEntry playerEntry, MutableText name) {
+        return getAppliedName(playerEntry.toEntry(), name);
     }
 
-    private static Text getAppliedGlobalName(CustomNamesConfig.Entry config, MutableText name) {
+    private static Text getAppliedName(CustomNamesConfig.Entry entry, MutableText name) {
 
-        if(config.nameOverwriteEnabled) name = Text.literal(config.nameOverwrite).setStyle(name.getStyle());
-        if(config.nameColorEnabled) name = name.withColor(config.nameColor);
-        if(config.prefixEnabled) {
-            MutableText prefix = Text.literal(config.prefix);
-            if(config.prefixColorEnabled) prefix = prefix.withColor(config.prefixColor);
+        if(entry.nameOverwriteEnabled) name = Text.literal(entry.nameOverwrite).setStyle(name.getStyle());
+        if(entry.nameColorEnabled) name = name.withColor(entry.nameColor);
+        if(entry.prefixEnabled) {
+            MutableText prefix = Text.literal(entry.prefix);
+            if(entry.prefixColorEnabled) prefix = prefix.withColor(entry.prefixColor);
             name = prefix.append(name);
         }
-        if(config.suffixEnabled) {
-            MutableText suffix = Text.literal(config.suffix);
-            if(config.suffixColorEnabled) suffix = suffix.withColor(config.suffixColor);
+        if(entry.suffixEnabled) {
+            MutableText suffix = Text.literal(entry.suffix);
+            if(entry.suffixColorEnabled) suffix = suffix.withColor(entry.suffixColor);
             name = name.append(suffix);
         }
 
@@ -67,7 +53,7 @@ public class CustomNames implements ClientModInitializer {
                 .findAny()
                 .ifPresentOrElse(
                         playerEntry -> nameWrapper.wrappedName = CustomNames.getAppliedPlayerName(playerEntry, (MutableText) nameWrapper.wrappedName),
-                        () -> nameWrapper.wrappedName = CustomNames.getAppliedGlobalName(config.globalConfig, (MutableText) nameWrapper.wrappedName)
+                        () -> nameWrapper.wrappedName = CustomNames.getAppliedName(config.globalConfig, (MutableText) nameWrapper.wrappedName)
                 );
 
         return nameWrapper.wrappedName;

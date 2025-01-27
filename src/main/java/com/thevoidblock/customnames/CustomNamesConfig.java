@@ -75,6 +75,23 @@ public class CustomNamesConfig implements ConfigData {
         public boolean suffixColorEnabled = false;
         @ConfigEntry.ColorPicker
         public int suffixColor = 16777215;
+
+        public Entry toEntry() {
+            Entry entry = new Entry();
+            entry.nameOverwriteEnabled = this.nameOverwriteEnabled;
+            entry.nameOverwrite = this.nameOverwrite;
+            entry.nameColorEnabled = this.nameColorEnabled;
+            entry.nameColor = this.nameColor;
+            entry.prefixEnabled = this.prefixEnabled;
+            entry.prefix = this.prefix;
+            entry.prefixColorEnabled = this.prefixColorEnabled;
+            entry.prefixColor = this.prefixColor;
+            entry.suffixEnabled = this.suffixEnabled;
+            entry.suffix = this.suffix;
+            entry.suffixColorEnabled = this.suffixColorEnabled;
+            entry.suffixColor = this.suffixColor;
+            return entry;
+        }
     }
 
 }
