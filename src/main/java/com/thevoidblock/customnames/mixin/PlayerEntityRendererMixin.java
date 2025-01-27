@@ -3,6 +3,7 @@ package com.thevoidblock.customnames.mixin;
 import com.thevoidblock.customnames.CustomNames;
 import com.thevoidblock.customnames.CustomNamesConfig;
 import me.shedaniel.autoconfig.AutoConfig;
+import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.entity.PlayerEntityRenderer;
 import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
@@ -23,8 +24,9 @@ public class PlayerEntityRendererMixin {
         CustomNamesConfig config = AutoConfig.getConfigHolder(CustomNamesConfig.class).getConfig();
 
         if(config.enabled) {
-            Text name = args.get(1);
-            args.set(1, CustomNames.getAppliedName(config, (MutableText) name));
+            Text name = ((AbstractClientPlayerEntity)args.get(0)).getName();
+            if(CustomNames.checkNameModification(config, name))
+                args.set(1, CustomNames.getAppliedName(config, (MutableText) name));
         }
 
     }

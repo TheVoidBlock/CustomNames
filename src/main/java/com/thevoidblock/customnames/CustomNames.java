@@ -43,6 +43,20 @@ public class CustomNames implements ClientModInitializer {
         return name;
     }
 
+    // checks whether a name will need to be modified
+    public static boolean checkNameModification(CustomNamesConfig config, final Text name) {
+        var modificationWrapper = new Object() {boolean modification;};
+        config.playerEntries
+                .stream()
+                .filter(playerEntry -> playerEntry.enabled && name.getString().equals(playerEntry.playerName))
+                .findAny()
+                .ifPresentOrElse(
+                        playerEntry -> modificationWrapper.modification = true,
+                        () -> modificationWrapper.modification = config.globalConfig.nameOverwriteEnabled || config.globalConfig.suffixEnabled || config.globalConfig.prefixEnabled
+                );
+        return modificationWrapper.modification;
+    }
+
     public static Text getAppliedName(CustomNamesConfig config, MutableText name) {
 
         var nameWrapper = new Object(){Text wrappedName = name;};
