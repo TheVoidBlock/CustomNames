@@ -1,4 +1,4 @@
-package com.thevoidblock.customnames;
+package io.github.thevoidblock.customnames;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;

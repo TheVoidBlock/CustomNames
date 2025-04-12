@@ -1,4 +1,4 @@
-package com.thevoidblock.customnames;
+package io.github.thevoidblock.customnames;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
@@ -6,7 +6,7 @@ import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
 
-import static com.thevoidblock.customnames.CustomNames.*;
+import static io.github.thevoidblock.customnames.CustomNames.*;
 
 public class ChatModifier {
     public static void register() {

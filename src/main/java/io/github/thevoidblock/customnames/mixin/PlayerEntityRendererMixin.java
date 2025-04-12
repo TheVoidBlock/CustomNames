@@ -1,7 +1,7 @@
-package com.thevoidblock.customnames.mixin;
+package io.github.thevoidblock.customnames.mixin;
 
-import com.thevoidblock.customnames.CustomNames;
-import com.thevoidblock.customnames.CustomNamesConfig;
+import io.github.thevoidblock.customnames.CustomNames;
+import io.github.thevoidblock.customnames.CustomNamesConfig;
 import me.shedaniel.autoconfig.AutoConfig;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Text;

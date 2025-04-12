@@ -1,4 +1,4 @@
-package com.thevoidblock.customnames;
+package io.github.thevoidblock.customnames;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

@@ -1,4 +1,4 @@
-package com.thevoidblock.customnames;
+package io.github.thevoidblock.customnames;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
@@ -7,7 +7,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.thevoidblock.customnames.CustomNames.MOD_ID;
+import static io.github.thevoidblock.customnames.CustomNames.MOD_ID;
 
 @Config(name = MOD_ID)
 public class CustomNamesConfig implements ConfigData {

@@ -17,10 +17,10 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "com.thevoidblock.customnames.CustomNames"
+      "io.github.thevoidblock.customnames.CustomNames"
     ],
     "modmenu": [
-      "com.thevoidblock.customnames.ModMenuIntegration"
+      "io.github.thevoidblock.customnames.ModMenuIntegration"
     ]
   },
   "mixins": [
