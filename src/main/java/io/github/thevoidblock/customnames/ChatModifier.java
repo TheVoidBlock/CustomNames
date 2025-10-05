@@ -26,7 +26,7 @@ public class ChatModifier {
 
                     if(sender == null) return attemptRawTranslatableChatModification(message, config);
 
-                    Text name = Text.of(sender.getName());
+                    Text name = Text.of(sender.name());
 
                     if(checkNameModification(config, name))
                         return modifyMessage(
