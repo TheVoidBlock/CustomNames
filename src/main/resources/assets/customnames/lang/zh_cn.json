@@ -1,0 +1,42 @@
+﻿{
+  "modmenu.descriptionTranslation.customnames": "允许您自定义其他玩家名称的显示样式。",
+
+  "text.autoconfig.customnames.title": "Custom Names 配置",
+
+  "text.autoconfig.customnames.option.enabled": "启用模组",
+  "text.autoconfig.customnames.option.chatModification": "修改玩家在聊天中的名称（实验性）",
+
+  "text.autoconfig.customnames.option.globalConfig.nameOverwriteEnabled": "启用全局名称覆盖",
+  "text.autoconfig.customnames.option.globalConfig.nameOverwrite": "全局名称覆盖",
+  "text.autoconfig.customnames.option.globalConfig.nameColorEnabled": "启用全局名称颜色",
+  "text.autoconfig.customnames.option.globalConfig.nameColor": "全局名称颜色",
+  "text.autoconfig.customnames.option.globalConfig.prefixEnabled": "启用全局名称前缀",
+  "text.autoconfig.customnames.option.globalConfig.prefix": "全局名称前缀",
+  "text.autoconfig.customnames.option.globalConfig.prefixColorEnabled": "启用全局名称前缀颜色",
+  "text.autoconfig.customnames.option.globalConfig.prefixColor": "全局名称前缀颜色",
+  "text.autoconfig.customnames.option.globalConfig.suffixEnabled": "启用全局名称后缀",
+  "text.autoconfig.customnames.option.globalConfig.suffix": "全局名称后缀",
+  "text.autoconfig.customnames.option.globalConfig.suffixColorEnabled": "启用全局名称后缀颜色",
+  "text.autoconfig.customnames.option.globalConfig.suffixColor": "全局名称后缀颜色",
+  
+  
+  "text.autoconfig.customnames.option.playerEntries": "玩家规则",
+  "text.autoconfig.customnames.option.PlayerEntry": "玩家规则",
+
+  "text.autoconfig.customnames.option.PlayerEntry.enabled": "启用玩家规则",
+  "text.autoconfig.customnames.option.PlayerEntry.playerName": "目标玩家名称",
+  "text.autoconfig.customnames.option.PlayerEntry.nameOverwriteEnabled": "启用名称覆盖",
+  "text.autoconfig.customnames.option.PlayerEntry.nameOverwrite": "名称覆盖",
+  "text.autoconfig.customnames.option.PlayerEntry.nameColorEnabled": "启用名称颜色",
+  "text.autoconfig.customnames.option.PlayerEntry.nameColor": "名称颜色",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixEnabled": "启用名称前缀",
+  "text.autoconfig.customnames.option.PlayerEntry.prefix": "名称前缀",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixColorEnabled": "启用名称前缀颜色",
+  "text.autoconfig.customnames.option.PlayerEntry.prefixColor": "名称前缀颜色",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixEnabled": "启用名称后缀",
+  "text.autoconfig.customnames.option.PlayerEntry.suffix": "名称后缀",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixColorEnabled": "启用名称后缀颜色",
+  "text.autoconfig.customnames.option.PlayerEntry.suffixColor": "名称后缀颜色",
+
+  "chat.customnames.format": "<%s> %s"
+}
